@@ -1,0 +1,94 @@
+html.index-page, body.index-page {
+    height: 100vh;
+}
+body {
+    background-color: #212121;
+    color: #eeeeee;
+}
+
+.grdcolor {
+    font-size: 72px;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.wrapper input[type="text"], .wrapper textarea {
+    background-color: #212529;
+    border: 1px solid #121a24;
+    color: #eeeeee;
+    padding: 0 10px;
+    border-radius: 0;
+}
+
+.wrapper input[type="text"]:focus, .wrapper textarea:focus {
+    background-color: #212529;
+    border-image-source: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    color: #eeeeee;
+    border-width: 1px;
+    border-image-slice: 1;
+}
+
+.wrapper .contactInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 1em;
+}
+.wrapper .contactInfo .boxContent {
+    background: #2c2b2b;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+.wrapper .contactInfo .boxContent .icon {
+    background: #212121;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.wrapper .contactInfo .boxContent .icon i {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper .contactInfo .boxContent .content {
+    flex: 1;
+    margin: 0 10px;
+}
+.wrapper .contactInfo .boxContent .content h3, .wrapper .contactInfo .boxContent .content p {
+    margin: 0;
+}
+
+.swal-modal {
+    background-color: rgb(26 26 26);
+}
+.swal-title {
+    color: #fff;
+}
+.swal-icon--success:before,
+.swal-icon--success:after,
+.swal-icon--success__hide-corners{
+    background: #1a1a1a;
+}
+
+@media only screen and (max-width: 767px) {
+    .title {
+        margin-top: 5em;
+    }
+}
